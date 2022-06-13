@@ -20,7 +20,7 @@ function solveEquation(a, b, c) {
 "use strict";
 function calculateTotalMortgage(percent, contribution, amount, date) {
   let totalAmount = 0;
-  let p = (parseInt(percent) / 12) / 100;
+  let p = (parseInt(percent) / 12) / 10;
 
   if (isNaN(p) || p < 0) {
     return `Параметр "Процентная ставка" содержит неправильное значение "${percent}"`;
