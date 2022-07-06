@@ -6,7 +6,7 @@ class AlarmClock {
 
     addClock(time, callback, id) {       
         if (typeof id === 'undefined') {
-            throw new Error('error text');
+            throw new Error('Error id parameter not passed');
         } 
         
         else if (typeof this.alarmCollection.find(clock => clock.id === id) !== 'undefined') {
